@@ -1,0 +1,14 @@
+{
+    "name": "rjjakes/microrest",
+    "require": {
+        "symfony/symfony": "3.*",
+        "sensio/framework-extra-bundle": "*",
+        "vlucas/phpdotenv": "^2.4",
+        "symfony/monolog-bundle": "^3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "AppBundle\\": "AppBundle/"
+        }
+    }
+}

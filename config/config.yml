@@ -1,0 +1,15 @@
+framework:
+    secret: ABC123
+    router:
+        resource: '%kernel.root_dir%/config/routing.yml'
+monolog:
+    handlers:
+        main:
+            type:         fingers_crossed
+            action_level: debug
+            handler:      nested
+            action_level: %log_action_level%
+        nested:
+            type:  stream
+            path:  "%kernel.logs_dir%/%kernel.environment%.log"
+            level: debug
